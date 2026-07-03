@@ -19,6 +19,7 @@ class ProfilePage extends StatelessWidget {
   String city = "Bishkek";
   int age = 16;
   String email = "m2501469@gmail.com";
+  String phoneNumber = "+996700112355";
 
   @override 
   Widget build(BuildContext context) {
@@ -121,7 +122,18 @@ class ProfilePage extends StatelessWidget {
                       color: Colors.white,),
                    ),
 
-                    SizedBox(height: 20), // Отступ между 
+              SizedBox(height: 8), // Отступ между текстом контактов и номером телефона
+
+              Text(
+                "Phone number: " + phoneNumber,
+                style: TextStyle(
+                  fontFamily: 'FascinateInline',
+                  fontSize: 18,
+                  color: Colors.white,
+                ),
+              ),
+
+              SizedBox(height: 20), // Отступ между текстом контактов и кнопками
 
                  Row(mainAxisAlignment: MainAxisAlignment.center, // Выравниваем кнопки по центру
                   children: [
