@@ -8,7 +8,13 @@ class EmailPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: const Text('Email'),
+        title: const Text(
+          'Email',
+          style: TextStyle(
+            fontFamily: 'FascinateInline',
+          ),
+        ),
+        centerTitle: true, // Заголовок по центру
         backgroundColor: Colors.purple,
         foregroundColor: Colors.white,
       ),

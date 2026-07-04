@@ -8,7 +8,13 @@ class PhonePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: const Text('Calls'),
+        title: const Text(
+          'Calls',
+          style: TextStyle(
+            fontFamily: 'FascinateInline',
+          ),
+        ),
+        centerTitle: true,
         backgroundColor: Colors.purple,
         foregroundColor: Colors.white,
       ),
